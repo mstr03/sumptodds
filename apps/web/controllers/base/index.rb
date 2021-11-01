@@ -4,7 +4,10 @@ module Web
       class Index
         include Web::Action
 
+        expose :teams
+
         def call(params)
+          @teams = TeamRepository.new.all
         end
       end
     end
