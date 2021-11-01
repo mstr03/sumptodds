@@ -1,0 +1,3 @@
+project=sumpterodds
+test=rspec
+template=erb
