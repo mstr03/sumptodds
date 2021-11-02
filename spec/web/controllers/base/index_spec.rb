@@ -6,7 +6,7 @@ RSpec.describe Web::Controllers::Base::Index, type: :action do
   before do
     repository.clear
 
-    @team = repository.create(name: 'Liverpool FC')
+    @team = repository.create(name: 'Liverpool FC', api_team_id: 1)
   end
 
   it 'is successful' do

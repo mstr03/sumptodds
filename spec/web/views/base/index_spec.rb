@@ -19,8 +19,8 @@ RSpec.describe Web::Views::Base::Index, type: :view do
   end
 
   context "if there are teams" do
-    let(:team1)     { Team.new(name: "Liverpool FC") }
-    let(:team2)     { Team.new(name: "Manchester United") }
+    let(:team1)     { Team.new(name: "Liverpool FC", api_team_id: 1) }
+    let(:team2)     { Team.new(name: "Manchester United", api_team_id: 2) }
     let(:exposures) { Hash[teams: [team1, team2]] }
 
     it 'lists them all' do
